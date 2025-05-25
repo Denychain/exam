@@ -1,0 +1,133 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  color: #222;
+  line-height: 1.5;
+  background: #fff;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 5%;
+  background: linear-gradient(90deg, #c72c35 0%, #f3c94c 100%);
+  color: #fff;
+}
+
+.btn {
+  background: #fff;
+  color: #c72c35;
+  padding: 0.7rem 1.4rem;
+  border-radius: 8px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.btn:hover {
+  opacity: 0.85;
+}
+
+.main {
+  width: 90%;
+  margin: 0 auto;
+  padding: 3rem 0;
+}
+
+.services h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.list {
+  display: none;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.card {
+  flex: 1 1 300px;
+  max-width: 350px;
+  border: 2px solid #c72c35;
+  padding: 1.5rem 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.card img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.card:hover {
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  transform: translateY(-4px);
+}
+
+.icon {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: #c72c35 center/60% no-repeat;
+}
+
+.portrait  { background-image: url("img/portrait.png"); }
+.reportage { background-image: url("img/reportage.png"); }
+.wedding   { background-image: url("img/wedding.png"); }
+
+.footer {
+  background: #8b0f25;
+  color: #fff;
+  text-align: center;
+  padding: 2rem 5% 1rem;
+}
+
+.footer a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.insta {
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  margin-top: 0.5rem;
+  background: url("https://cdn.jsdelivr.net/npm/simple-icons@10/icons/instagram.svg")
+    center / contain no-repeat;
+  filter: invert(1);
+}
+
+.footer small {
+  display: block;
+  margin-top: 1rem;
+  font-size: 0.85rem;
+}
+
+@media (max-width: 600px) {
+  .card {
+    flex: 1 1 100%;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+  }
+
+  .header h1 {
+    font-size: 1.2rem;
+  }
+
+  .btn {
+    padding: 0.6rem 1.2rem;
+    font-size: 0.9rem;
+  }
+}
